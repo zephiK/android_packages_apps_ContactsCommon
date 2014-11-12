@@ -62,6 +62,7 @@ public abstract class ContactEntryListAdapter extends IndexerListAdapter {
     private boolean mCircularPhotos = true;
     private boolean mQuickContactEnabled;
     private boolean mAdjustSelectionBoundsEnabled;
+    private boolean mQuickCallButtonEnabled;
 
     /**
      * indicates if contact queries include profile
@@ -346,6 +347,10 @@ public abstract class ContactEntryListAdapter extends IndexerListAdapter {
         return mQuickContactEnabled;
     }
 
+    public boolean isQuickCallButtonEnabled() {
+        return mQuickCallButtonEnabled;
+    }
+
     public void setQuickContactEnabled(boolean quickContactEnabled) {
         mQuickContactEnabled = quickContactEnabled;
     }
@@ -356,6 +361,10 @@ public abstract class ContactEntryListAdapter extends IndexerListAdapter {
 
     public void setAdjustSelectionBoundsEnabled(boolean enabled) {
         mAdjustSelectionBoundsEnabled = enabled;
+    }
+
+    public void setQuickCallButtonEnabled(boolean quickCallButtonEnabled) {
+        mQuickCallButtonEnabled = quickCallButtonEnabled;
     }
 
     public boolean shouldIncludeProfile() {
