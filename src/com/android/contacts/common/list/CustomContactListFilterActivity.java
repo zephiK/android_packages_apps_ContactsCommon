@@ -781,7 +781,7 @@ public class CustomContactListFilterActivity extends Activity
         if (syncMode == SYNC_MODE_EVERYTHING && shouldSyncUngrouped
                 && !child.equals(account.mUngrouped)) {
             // Warn before removing this group when it would cause ungrouped to stop syncing
-            final AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            final AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.ContactsAlertDialogTheme);
             final CharSequence removeMessage = this.getString(
                     R.string.display_warn_remove_ungrouped, title);
             builder.setTitle(R.string.menu_sync_remove);

@@ -208,7 +208,7 @@ public class ContactListItemView extends ViewGroup
     private boolean mPhotoViewWidthAndHeightAreReady = false;
 
     private int mNameTextViewHeight;
-    private int mNameTextViewTextColor = Color.BLACK;
+    private int mNameTextViewTextColor = Color.WHITE;
     private int mPhoneticNameTextViewHeight;
     private int mLabelViewHeight;
     private int mDataViewHeight;

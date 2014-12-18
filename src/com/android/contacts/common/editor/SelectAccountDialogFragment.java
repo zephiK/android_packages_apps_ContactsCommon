@@ -24,6 +24,7 @@ import android.app.FragmentManager;
 import android.content.DialogInterface;
 import android.os.Bundle;
 
+import com.android.contacts.common.R;
 import com.android.contacts.common.model.account.AccountWithDataSet;
 import com.android.contacts.common.util.AccountsListAdapter;
 import com.android.contacts.common.util.AccountsListAdapter.AccountListFilter;
@@ -70,7 +71,7 @@ public final class SelectAccountDialogFragment extends DialogFragment {
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        final AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(), R.style.ContactsAlertDialogTheme);
         final Bundle args = getArguments();
 
         final AccountListFilter filter = (AccountListFilter) args.getSerializable(KEY_LIST_FILTER);

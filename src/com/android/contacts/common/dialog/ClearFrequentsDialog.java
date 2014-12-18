@@ -64,7 +64,7 @@ public class ClearFrequentsDialog extends DialogFragment {
                 task.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
             }
         };
-        return new AlertDialog.Builder(getActivity())
+        return new AlertDialog.Builder(getActivity(), R.style.ContactsAlertDialogTheme)
             .setTitle(R.string.clearFrequentsConfirmation_title)
             .setMessage(R.string.clearFrequentsConfirmation)
             .setNegativeButton(android.R.string.cancel, null)

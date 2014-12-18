@@ -90,7 +90,7 @@ public class CancelActivity extends Activity implements ServiceConnection {
             } else {
                 message = getString(R.string.cancel_export_confirmation_message, mDisplayName);
             }
-            final AlertDialog.Builder builder = new AlertDialog.Builder(this)
+            final AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.ContactsAlertDialogTheme)
                     .setMessage(message)
                     .setPositiveButton(android.R.string.ok, new RequestCancelListener())
                     .setOnCancelListener(mCancelListener)
@@ -98,7 +98,7 @@ public class CancelActivity extends Activity implements ServiceConnection {
             return builder.create();
         }
         case R.id.dialog_cancel_failed:
-            final AlertDialog.Builder builder = new AlertDialog.Builder(this)
+            final AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.ContactsAlertDialogTheme)
                     .setTitle(R.string.cancel_vcard_import_or_export_failed)
                     .setIconAttribute(android.R.attr.alertDialogIcon)
                     .setMessage(getString(R.string.fail_reason_unknown))
