@@ -143,7 +143,7 @@ public class AccountSelectionUtil {
                 }
             };
         }
-        return new AlertDialog.Builder(context, R.style.ContactsAlertDialogTheme)
+        return new AlertDialog.Builder(context)
             .setTitle(R.string.dialog_new_contact_account)
             .setSingleChoiceItems(accountAdapter, 0, onClickListener)
             .setOnCancelListener(onCancelListener)
