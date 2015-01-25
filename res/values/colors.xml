@@ -149,4 +149,12 @@
     <!-- Color of the background of the contact detail and editor pages -->
     <color name="background_primary">#f9f9f9</color>
     <color name="contact_all_list_background_color">#FFFFFF</color>
+    
+    <!-- exposed colors for theming -->
+    <color name="exposed_bg_dark">#ffffffff</color>
+    <color name="exposed_bg_light">#ff000000</color>
+    <color name="exposed_primary_text_light">#de000000</color>
+    <color name="exposed_secondary_text_light">#8a000000</color>
+    <color name="exposed_primary_text_dark">#ffffffff</color>
+    <color name="exposed_secondary_text_dark">#b3ffffff</color>
 </resources>

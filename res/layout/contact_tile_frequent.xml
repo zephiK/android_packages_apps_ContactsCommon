@@ -33,12 +33,12 @@
             android:layout_height="?list_item_photo_size"
             android:scaleType="centerCrop"
             android:layout_marginEnd="?list_item_gap_between_image_and_text"/>
-
+	<!-- Exposed textcolor for theming -->
         <TextView
             android:id="@+id/contact_tile_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/black"
+            android:textColor="@color/exposed_primary_text_light"
             android:textSize="@dimen/contact_browser_list_item_text_size"
             android:singleLine="true"
             android:fadingEdge="horizontal"
